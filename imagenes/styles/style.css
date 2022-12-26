@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+/*------------------------NAV-----------------------------*/
+
+
+.header{
+    
+    display: flex;
+    background-color: #D6D6D4 ;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 5px 10%;
+    
+
+}
+
+
+.header div img {
+    width: 75px;
+}
+
+.header .logo{
+    
+    
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.logo__titulo{
+
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    padding: auto;
+    display: flex;
+    
+   align-items: center;
+   
+
+}
+
+
+
+.menu {
+
+    list-style-type: none;
+    background-color:#D6D6D4;
+    display: flex;
+    text-decoration: none;
+    align-items:center;
+    gap: 20px;
+    justify-content: space-between;
+    padding: auto;
+    
+  
+}
+  
+.logo__face,.logo__insta,.logo__in,.logo__twitter{
+    width: 20px;
+    padding: 3px;
+    margin-inline: 5px;
+    
+}
+
+
+
+
+/*----------------------------AJUSTE DEL TEXTO/LINK--------------------------*/
+.menu_index a, 
+.menu_galeria a,
+.menu_producciones a,
+.menu_cursos a,
+.menu_contacto a{
+    text-decoration: none;
+    color: black;
+      
+}
+
+/*---------BATIRLA CUANDO PASA EL MOUSE-------------*/
+.menu_index a:hover, 
+.menu_galeria a:hover,
+.menu_producciones a:hover,
+.menu_cursos a:hover,
+.menu_contacto a:hover{
+    
+    color: grey;
+    
+}
+.menu_index:hover, 
+.menu_galeria:hover,
+.menu_producciones:hover,
+.menu_cursos:hover,
+.menu_contacto:hover{
+    transform: scale(1.1);
+   
+}
+    
+
+
+    
+
+body{
+    background-color: #cdf7f6;
+
+}
+
+
+
+.titulo__principal{
+  
+   text-align: center;
+    left: 50%;
+    
+
+}
+/*--------------------quienes somos----------------------*/
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 3rem;
+    margin-inline-start: rem;
+   padding-bottom: 6rem;
+   padding-top:3rem;
+}
+
+.intro__titulo{
+ margin-left: 10rem;
+ margin-inline-start: 40rem;
+    
+}
+
+.intro__texto{
+    width: 600px;
+    margin-inline-end: 20rem;
+   
+}
+
+
+/*----------------------la navigation------------------------------*/
+.padre__gpc{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.imgn{
+    padding: 5%;
+    width: 100% ;
+    border-radius: 10px;
+    
+}
+
+
+
+.gpc{
+    display: inline ;
+    border-radius: 10px;
+  background-color: #7de0ae;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulos{
+    font-size: 25px;
+    
+    
+}
+
+/*----------te puede interesar----------*/
+.tpi{
+    text-align: center;
+    padding: 3rem;
+}
+.videosyt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+ }
+
+ .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+ }
+
+ /*----------footer-----------*/
+ footer{
+    padding: 1rem;
+
+
+ }
+
+ /******************************************GALERIA*****************************************/
+ .galleryimg {
+    width: 100%;
+    
+ }
+ 
+ .gallery{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    
+
+ }
+
+ .column{
+    flex: 25%;
+    padding: 5px;
+    
+ }
+ .column img{
+    margin-top: 5px;
+ }
+
+ /*******************CURSOS**********************/
+.container__cursos{
+    display: flex;
+    flex-direction: column;
+  padding: 2rem;
+    
+}
+
+.card__cursos{
+    padding-bottom: 2rem;
+}
+
+
+.card__paragraph{
+    width: 600px;
+    padding: 10px;
+}
+
+/************************CONTACTO************************/
