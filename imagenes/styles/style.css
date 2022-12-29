@@ -128,10 +128,11 @@ body{
 
 .intro{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content:space-between;
     gap: 3rem;
-    margin-inline-start: rem;
+    margin-inline: 10rem;
    padding-bottom: 6rem;
    padding-top:3rem;
 }
@@ -208,6 +209,27 @@ body{
  }
 
  /******************************************GALERIA*****************************************/
+
+
+
+
+.intro_galeria{
+
+display: flex;
+flex-direction: column;
+}
+.intro_galeria h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro_galeria p{
+    
+    text-align: center;
+    margin-top: 15px;
+    margin-inline: 400px;
+}
+ 
  .galleryimg {
     width: 100%;
     
@@ -231,21 +253,105 @@ body{
  }
 
  /*******************CURSOS**********************/
-.container__cursos{
-    display: flex;
-    flex-direction: column;
-  padding: 2rem;
+
+ .cursos {
+    display: grid;
     
+    
+    grid-template-rows: repeat(3,350px);
+
+    grid-template-areas: 
+    "foto"
+    "video"
+    "audio";
+ }
+
+ .card__cursos1 {
+    grid-area: foto;
+ }
+
+ .card__cursos2 {
+    grid-area: video;
+ }
+
+ .card__cursos3 {
+    grid-area: audio;
+ }
+
+.card__cursos1, 
+.card__cursos2,
+.card__cursos3{
+
+    border: 1px solid rgba(94, 80, 80, 0.514);
+   
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". titulo ."
+    "descripcion pasos  video"
+    "descripcion pasos  video"
+    ;
+}
+.card__cursos1:hover, 
+.card__cursos2:hover,
+.card__cursos3:hover{
+    background-color: grey;
+    border-radius: 40px;
+    transition: all 1.5s;
 }
 
-.card__cursos{
-    padding-bottom: 2rem;
+.card__title{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
-
 
 .card__paragraph{
-    width: 600px;
-    padding: 10px;
+  grid-area: descripcion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
+.card__steps{
+    grid-area: pasos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.card__video{
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/************************PRODUCCIONES************************/
+.pa-title {
+    text-align: center;
+}
+
+
+
+
 /************************CONTACTO************************/
+
+/*index*/
+.contactanos{
+    text-decoration: none;
+
+}
+
+.contactanos h2 {
+    color: black;
+}
+
+/*pagina contacto*/
