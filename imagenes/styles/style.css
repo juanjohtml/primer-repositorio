@@ -29,7 +29,7 @@
     
     
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .header .logo:hover{
@@ -42,6 +42,7 @@
     align-items: center;
 }
 .navbar {
+    
     padding: auto;
     display: flex;
     
@@ -67,7 +68,7 @@
 }
   
 .logo__face,.logo__insta,.logo__in,.logo__twitter{
-    width: 20px;
+    width: 15px;
     padding: 3px;
     margin-inline: 5px;
     
@@ -133,9 +134,9 @@ body{
     align-items: center;
     gap: 3rem;
     margin-inline: 10rem;
-   padding-bottom: 6rem;
-   padding-top:3rem;
-}
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+} 
 
 .intro__titulo{
  margin-left: 10rem;
@@ -289,9 +290,9 @@ flex-direction: column;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    ". titulo ."
-    "descripcion pasos  video"
-    "descripcion pasos  video"
+    "...........  titulo  video"
+    "descripcion  pasos   video"
+    "descripcion  pasos   video"
     ;
 }
 .card__cursos1:hover, 
