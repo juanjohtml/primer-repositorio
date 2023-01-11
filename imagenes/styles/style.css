@@ -220,9 +220,11 @@ body{
  
  /*----------footer-----------*/
  #footer {
+    width: 100%;
     padding: 1rem;   
-    position: absolute;
-    bottom: 0 ;
+    background-color: #D6D6D4;
+    position:relative;
+
     
 
      }
@@ -230,6 +232,8 @@ body{
 footer p{
     background-color: #D6D6D4;
 }
+
+
  /******************************************GALERIA*****************************************/
 
 
