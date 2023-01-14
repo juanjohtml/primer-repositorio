@@ -449,6 +449,9 @@ flex-direction: column;
     background-color: white;
 }
 /**********NAV RESPONSIVE****************/
+#burger{
+    z-index: 300;
+}
 .nav-responsive{
     background-color:#D6D6D4;
     width: 100%;
