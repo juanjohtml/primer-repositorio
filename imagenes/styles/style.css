@@ -9,13 +9,15 @@
 
 
 .header{
-    
+    width: 100%;
+    position: fixed;
     display: flex;
     background-color: #D6D6D4 ;
     align-items: center;
     justify-content: space-between;
     height: 85px;
     padding: 5px 10%;
+    z-index: 100;
     
 
 }
@@ -224,9 +226,6 @@ body{
     padding: 1rem;   
     background-color: #D6D6D4;
     position:relative;
-
-    
-
      }
 
 footer p{
@@ -239,15 +238,17 @@ footer p{
 
 
 
-.intro_galeria{
+/* .intro_galeria{
 
 display: flex;
 flex-direction: column;
+} */
+#header2{
+    top: 0 !important;
 }
-
 .intro_galeria h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .intro_galeria p{
@@ -266,6 +267,7 @@ flex-direction: column;
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
+    width: 100vw;
     
 
  }
@@ -280,7 +282,9 @@ flex-direction: column;
  }
 
  /*******************CURSOS**********************/
-
+ #cursos{
+    margin-top: 80px;
+}
  .cursos {
     display: grid;
     
@@ -309,7 +313,7 @@ flex-direction: column;
 .card__cursos2,
 .card__cursos3{
 
-    border: 1px solid rgba(94, 80, 80, 0.514);
+    /* border: 1px solid rgba(94, 80, 80, 0.514); */
    
     margin: 10px;
     display: grid;
@@ -364,6 +368,7 @@ flex-direction: column;
 /************************PRODUCCIONES************************/
 .pa-title {
     text-align: center;
+    margin-top: 100px;
 }
 
 .producciones{
@@ -526,12 +531,7 @@ transition: .5s;
     display: none;
 }
 
-@media screen and (max-width: 952px){
-    /*********inicioINDEX*********/
-    .li-responsive a{
-        font-size: 16px;
-    }
-}
+
 
 @media screen and (max-width: 1306px){
     /*********inicioINDEX*********/
@@ -563,8 +563,32 @@ transition: .5s;
      }
 }
 
+/****PRODUCCIONES****/
+.producciones__container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.producciones__item1,
+.producciones__item2,
+.producciones__item3{
+    padding: 10px;
+}
+
+/****GALERIA****/
+.intro_galeria p{
+    
+    
+    margin-inline: 180px;
+    margin-bottom: 20px;
+}
 @media screen and (max-width: 992px){
     /*********inicioINDEX*********/
+    .nav-responsive{
+        position: fixed;
+        z-index: 200;
+    }
     
     .header{
         display: none;
@@ -602,15 +626,30 @@ transition: .5s;
     #check:checked ~ .ul-responsive{
         right: 0;
     }
+
+    /****GALERIA****/
+    .nav-responsive{
+        top: 0 !important;
+    }
+
+    .gallery{
+        flex-direction: column;
+    }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:993px) {
     /*********inicioINDEX*********/
     .nav-responsive{
         display: none;
     }
 }
 
+@media screen and (max-width: 952px){
+    /*********inicioINDEX*********/
+    .li-responsive a{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width:768px) {
     /*********inicioINDEX*********/
     .intro{
@@ -628,6 +667,44 @@ transition: .5s;
      .contact{
         padding: 25px 20px;
      }
+
+     /*****cursos*****/
+.cursos {
+    display: grid;
+    
+    
+    grid-template-rows: repeat(3,500px);
+
+    grid-template-areas: 
+    "foto"
+    "video"
+    "audio";
+ }
+
+.card__cursos1, 
+.card__cursos2,
+.card__cursos3{
+
+    /* border: 1px solid rgba(94, 80, 80, 0.514); */
+   
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo  titulo "
+    "descripcion pasos"
+    "video   video"
+    ;
+}
+/****GALERIA****/
+.intro_galeria p{
+    
+    
+    margin-inline: 60px;
+    margin-bottom: 20px;
+}
+
 }
 
 
