@@ -1,0 +1,145 @@
+@media (max-width: 1306px) {
+
+    /*********inicioINDEX*********/
+    .redes {
+        a {
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+
+
+
+    .header {
+        padding: 20px;
+        justify-content: space-around;
+
+        .logo__titulo {
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    #br1,
+    #br2 {
+        display: none;
+    }
+
+
+ 
+    .videoyt {
+        iframe {
+
+            width: 300px ;
+            height: 180px;
+            padding: 5px;
+
+        }
+
+    }
+
+
+
+    /****PRODUCCIONES****/
+    .producciones {
+        .producciones__container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+
+            .producciones__item1,
+            .producciones__item2,
+            .producciones__item3 {
+                padding: 10px;
+            }
+        }
+    }
+
+
+
+    /****GALERIA****/
+    .intro_galeria {
+
+        p {
+            margin-inline: 180px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    /*********inicioINDEX*********/
+    .header {
+        display: none;
+    }
+
+    .nav-responsive {
+        position: fixed;
+        z-index: 200;
+
+        .checkbtn {
+            display: block;
+        }
+
+        .ul-responsive {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #7e7a7ad3;
+            top: 80px;
+            right: 100%;
+            text-align: center;
+            transition: all 0.5s;
+            z-index: 100;
+
+            .li-responsive {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+
+                a {
+                    font-size: 20px;
+
+                }
+
+            }
+        }
+    }
+
+    #check:checked~.ul-responsive {
+        right: 0;
+    }
+
+    /****GALERIA****/
+    .nav-responsive {
+        top: 0 !important;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:993px) {
+
+    /*********inicioINDEX*********/
+    .nav-responsive {
+        display: none;
+    }
+}
+
+@media (max-width: 952px) {
+
+    /*********inicioINDEX*********/
+    .li-responsive a {
+        font-size: 16px;
+    }
+}

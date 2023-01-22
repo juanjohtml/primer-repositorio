@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;500;700;900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
 }
+
 /*------------------------NAV-----------------------------*/
 
 
-.header{
+.header {
     width: 100%;
     position: fixed;
     display: flex;
-    background-color: #D6D6D4 ;
+    background-color: #D6D6D4;
     align-items: center;
     justify-content: space-between;
     height: 85px;
     padding: 5px 10%;
     z-index: 100;
-    
+
 
 }
 
@@ -27,29 +29,30 @@
     width: 75px;
 }
 
-.header .logo{
-    
-    
+.header .logo {
+
+
     cursor: pointer;
     transition: all 0.5s;
 }
 
-.header .logo:hover{
+.header .logo:hover {
     transform: scale(1.2);
 }
 
-.logo__titulo{
+.logo__titulo {
 
     display: flex;
     align-items: center;
 }
+
 .navbar {
-    
+
     padding: auto;
     display: flex;
-    
-   align-items: center;
-   
+
+    align-items: center;
+
 
 }
 
@@ -58,87 +61,92 @@
 .menu {
 
     list-style-type: none;
-    background-color:#D6D6D4;
+    background-color: #D6D6D4;
     display: flex;
     text-decoration: none;
-    align-items:center;
+    align-items: center;
     gap: 20px;
     justify-content: space-between;
     padding: auto;
-    
-  
+
+
 }
-  
-.logo__face,.logo__insta,.logo__in,.logo__twitter{
+
+.logo__face,
+.logo__insta,
+.logo__in,
+.logo__twitter {
     width: 15px;
     padding: 3px;
     margin-inline: 5px;
-    
+
 }
 
 /****************FOTO HERO********************/
-.sensor{
+.sensor {
     position: relative;
     height: 300px;
     width: 100vw;
     overflow: hidden;
-    background:url(../../camara2.jpg) no-repeat center;
-    background-size:cover;
+    background: url(../../camara2.jpg) no-repeat center;
+    background-size: cover;
     margin-top: 0%;
 
 }
 
 /*----------------------------AJUSTE DEL TEXTO/LINK--------------------------*/
-.menu_index a, 
+.menu_index a,
 .menu_galeria a,
 .menu_producciones a,
 .menu_cursos a,
-.menu_contacto a{
+.menu_contacto a {
     text-decoration: none;
     color: black;
-      
+
 }
 
 /*---------BATIRLA CUANDO PASA EL MOUSE-------------*/
-.menu_index a:hover, 
+.menu_index a:hover,
 .menu_galeria a:hover,
 .menu_producciones a:hover,
 .menu_cursos a:hover,
-.menu_contacto a:hover{
-    
+.menu_contacto a:hover {
+
     color: grey;
-    
+
 }
-.menu_index:hover, 
+
+.menu_index:hover,
 .menu_galeria:hover,
 .menu_producciones:hover,
 .menu_cursos:hover,
-.menu_contacto:hover{
+.menu_contacto:hover {
     transform: scale(1.1);
-   
+
 }
-    
 
 
-    
 
-body{
+
+
+body {
     background-color: #cdf7f6;
 
 }
 
 
 
-.titulo__principal{
-  
-   text-align: center;
+.titulo__principal {
+
+    text-align: center;
     left: 50%;
-    
+
 
 }
+
 /*--------------------quienes somos----------------------*/
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,93 +155,96 @@ body{
     margin-inline: 10rem;
     padding-bottom: 6rem;
     padding-top: 3rem;
-} 
-
-.intro__titulo{
- margin-left: 10rem;
- margin-inline-start: 40rem;
-    
 }
 
-.intro__texto{
+.intro__titulo {
+    margin-left: 10rem;
+    margin-inline-start: 40rem;
+
+}
+
+.intro__texto {
     width: 600px;
     margin-inline-end: 20rem;
-   
+
 }
 
 
 /*----------------------la navigation------------------------------*/
-.padre__gpc{
+.padre__gpc {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
 
-.imgn{
+.imgn {
     padding: 5%;
-    width: 100% ;
+    width: 100%;
     border-radius: 10px;
-    
+
 }
 
 
 
-.gpc{
-    display: inline ;
+.gpc {
+    display: inline-block;
     border-radius: 10px;
-  background-color: #7de0ae;
-  width: 30%;
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
+    background-color: #7de0ae;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
-.titulos{
+.titulos {
     font-size: 25px;
-    
-    
+
+
 }
 
 /*----------te puede interesar----------*/
-.tpi{
+.tpi {
     text-align: center;
     padding: 3rem;
 }
-.videosyt{
+
+.videosyt {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
- }
- .videoyt iframe{
+
+}
+
+.videoyt iframe {
     width: 500px;
     height: 315px;
     padding: 5px;
-    
- }
- .contact{
+
+}
+
+.contact {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10rem;
- }
+}
 
 
- 
- /*----------footer-----------*/
- #footer {
+
+/*----------footer-----------*/
+#footer {
     width: 100%;
-    padding: 1rem;   
+    padding: 1rem;
     background-color: #D6D6D4;
-    position:relative;
-     }
+    position: relative;
+}
 
-footer p{
+footer p {
     background-color: #D6D6D4;
 }
 
 
- /******************************************GALERIA*****************************************/
+/******************************************GALERIA*****************************************/
 
 
 
@@ -243,97 +254,101 @@ footer p{
 display: flex;
 flex-direction: column;
 } */
-#header2{
+#header2 {
     top: 0 !important;
 }
+
 .intro_galeria h1 {
     text-align: center;
     margin-top: 100px;
 }
 
-.intro_galeria p{
-    
+.intro_galeria p {
+
     text-align: center;
     margin-top: 15px;
     margin-inline: 400px;
 }
- 
- .galleryimg {
+
+.galleryimg {
     width: 100%;
-    
- }
- 
- .gallery{
+
+}
+
+.gallery {
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
     width: 100vw;
-    
 
- }
 
- .column{
+}
+
+.column {
     flex: 25%;
     padding: 5px;
-    
- }
- .column img{
-    margin-top: 5px;
- }
 
- /*******************CURSOS**********************/
- #cursos{
+}
+
+.column img {
+    margin-top: 5px;
+}
+
+/*******************CURSOS**********************/
+#cursos {
     margin-top: 80px;
 }
- .cursos {
+
+.cursos {
     display: grid;
-    
-    
-    grid-template-rows: repeat(3,350px);
 
-    grid-template-areas: 
-    "foto"
-    "video"
-    "audio";
- }
 
- .card__cursos1 {
+    grid-template-rows: repeat(3, 350px);
+
+    grid-template-areas:
+        "foto"
+        "video"
+        "audio";
+}
+
+.card__cursos1 {
     grid-area: foto;
- }
+}
 
- .card__cursos2 {
+.card__cursos2 {
     grid-area: video;
- }
+}
 
- .card__cursos3 {
+.card__cursos3 {
     grid-area: audio;
- }
+}
 
-.card__cursos1, 
+.card__cursos1,
 .card__cursos2,
-.card__cursos3{
+.card__cursos3 {
 
     /* border: 1px solid rgba(94, 80, 80, 0.514); */
-   
+
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "...........  titulo  video"
-    "descripcion  pasos   video"
-    "descripcion  pasos   video"
+    grid-template-areas:
+        "...........  titulo  video"
+        "descripcion  pasos   video"
+        "descripcion  pasos   video"
     ;
 }
-.card__cursos1:hover, 
+
+.card__cursos1:hover,
 .card__cursos2:hover,
-.card__cursos3:hover{
+.card__cursos3:hover {
     background-color: grey;
     border-radius: 40px;
     transition: all 1.5s;
 }
 
-.card__title{
+.card__title {
     grid-area: titulo;
     display: flex;
     justify-content: center;
@@ -341,15 +356,15 @@ flex-direction: column;
     padding: 15px;
 }
 
-.card__paragraph{
-  grid-area: descripcion;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
+.card__paragraph {
+    grid-area: descripcion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 
-.card__steps{
+.card__steps {
     grid-area: pasos;
     display: flex;
     justify-content: center;
@@ -357,7 +372,7 @@ flex-direction: column;
     padding: 15px;
 }
 
-.card__video{
+.card__video {
     grid-area: video;
     display: flex;
     justify-content: center;
@@ -371,41 +386,43 @@ flex-direction: column;
     margin-top: 100px;
 }
 
-.producciones{
-    
+.producciones {
+
     display: flex;
     flex-direction: column;
-   
+
 }
 
-.producciones__container{
+.producciones__container {
     display: grid;
-    
+
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "item1 item2 item3";
+    grid-template-areas:
+        "item1 item2 item3";
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 
 }
 
-.producciones__item1{
-    
+.producciones__item1 {
+
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: item1;
-    
+
 }
-.producciones__item2{
+
+.producciones__item2 {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: item2;
 }
-.producciones__item3{
+
+.producciones__item3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,18 +431,19 @@ flex-direction: column;
 
 .producciones__item1 img,
 .producciones__item2 img,
-.producciones__item3 img{
+.producciones__item3 img {
     border-radius: 7px;
 }
 
-.producciones h3{
+.producciones h3 {
     text-align: center;
     margin: 30px;
 }
+
 /************************CONTACTO************************/
 
 /*index*/
-.contactanos{
+.contactanos {
     text-decoration: none;
 
 }
@@ -435,56 +453,59 @@ flex-direction: column;
 }
 
 
-.accordion-button{
+.accordion-button {
     background-color: #D6D6D4;
     border-radius: 5px;
 }
 
-.accordion-body{
+.accordion-body {
     border-radius: 5px;
 }
 
 
-#accordionExample{
+#accordionExample {
     background-color: white;
 }
+
 /**********NAV RESPONSIVE****************/
-#burger{
+#burger {
     z-index: 300;
 }
-.nav-responsive{
-    background-color:#D6D6D4;
+
+.nav-responsive {
+    background-color: #D6D6D4;
     width: 100%;
     height: 80px;
-    
+
 }
 
-.titulo-responsive{
-   
+.titulo-responsive {
+
     height: 80px;
     display: inline-block;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.titulo-responsive a img{
+.titulo-responsive a img {
     position: relative;
-   margin-bottom: px;
+    margin-bottom: px;
 }
 
-.titulo-responsive h2{
-    
+.titulo-responsive h2 {
+
     position: absolute;
-    margin-left: 90px ;
+    margin-left: 90px;
     margin-top: 25px;
-    
+
 }
+
 .ul-responsive {
     list-style: none;
     float: right;
-    
+
     text-decoration: none;
-    
+
 }
 
 .li-responsive a {
@@ -494,20 +515,20 @@ flex-direction: column;
     padding: 7px 13px;
 }
 
-.enlace{
-    
+.enlace {
+
     position: absolute;
     padding: 20px 50px;
 }
 
-.logo-responsive{
+.logo-responsive {
     height: 40px;
 }
 
-.li-responsive{
+.li-responsive {
     text-decoration: none;
     list-style: none;
-    display:inline-block;
+    display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
@@ -520,7 +541,7 @@ transition: .5s;
 }
 */
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: #000;
     float: right;
@@ -530,44 +551,48 @@ transition: .5s;
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
 
 
-@media screen and (max-width: 1306px){
+@media screen and (max-width: 1306px) {
+
     /*********inicioINDEX*********/
-    .redes a img{
+    .redes a img {
         width: 50px;
     }
-    .logo__titulo h2{
+
+    .logo__titulo h2 {
         font-size: 18px;
     }
 
-    .header{
+    .header {
         padding: 20px;
         justify-content: space-around;
-        
+
     }
-    #br1, #br2{
+
+    #br1,
+    #br2 {
         display: none;
     }
 
-    .iframe-video{
+    .iframe-video {
         width: 350;
     }
 
-    .videoyt iframe{
+    .videoyt iframe {
         width: 300px;
         height: 180px;
         padding: 5px;
-        
-     }
+
+    }
 }
 
 /****PRODUCCIONES****/
-.producciones__container{
+.producciones__container {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -575,48 +600,53 @@ transition: .5s;
 
 .producciones__item1,
 .producciones__item2,
-.producciones__item3{
+.producciones__item3 {
     padding: 10px;
 }
 
 /****GALERIA****/
-.intro_galeria p{
-    
-    
+.intro_galeria p {
+
+
     margin-inline: 180px;
     margin-bottom: 20px;
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
+
     /*********inicioINDEX*********/
-    .nav-responsive{
+    .nav-responsive {
         position: fixed;
         z-index: 200;
     }
-    
-    .header{
+
+    .header {
         display: none;
     }
 
-    .checkbtn{
+    .checkbtn {
         display: block;
     }
-    .ul-responsive{
+
+    .ul-responsive {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background:#7e7a7ad3;
+        background: #7e7a7ad3;
         top: 80px;
         right: 100%;
         text-align: center;
         transition: all 0.5s;
         z-index: 100;
     }
-    .li-responsive{
+
+    .li-responsive {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    .li-responsive a{
+
+    .li-responsive a {
         font-size: 20px;
 
     }
@@ -626,123 +656,136 @@ transition: .5s;
         color: red;
     }
      */
-    #check:checked ~ .ul-responsive{
+    #check:checked~.ul-responsive {
         right: 0;
     }
 
     /****GALERIA****/
-    .nav-responsive{
+    .nav-responsive {
         top: 0 !important;
     }
 
-    .gallery{
+    .gallery {
         flex-direction: column;
     }
 }
 
 @media screen and (min-width:993px) {
+
     /*********inicioINDEX*********/
-    .nav-responsive{
+    .nav-responsive {
         display: none;
     }
 }
 
-@media screen and (max-width: 952px){
+@media screen and (max-width: 952px) {
+
     /*********inicioINDEX*********/
-    .li-responsive a{
+    .li-responsive a {
         font-size: 16px;
     }
 }
+
 @media screen and (max-width:768px) {
+
     /*********inicioINDEX*********/
-    .intro{
+    .intro {
         margin-inline: 4rem;
     }
-    .videosyt{
+
+    .videosyt {
         flex-direction: column;
     }
-    .videoyt iframe{
+
+    .videoyt iframe {
         width: 500px;
         height: 320px;
         padding: 5px;
-        
-     }
-     .contact{
+
+    }
+
+    .contact {
         padding: 25px 20px;
-     }
+    }
 
-     /*****cursos*****/
-.cursos {
-    display: grid;
-    
-    
-    grid-template-rows: repeat(3,500px);
+    /*****cursos*****/
+    .cursos {
+        display: grid;
 
-    grid-template-areas: 
-    "foto"
-    "video"
-    "audio";
- }
 
-.card__cursos1, 
-.card__cursos2,
-.card__cursos3{
+        grid-template-rows: repeat(3, 500px);
 
-    /* border: 1px solid rgba(94, 80, 80, 0.514); */
-   
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "titulo  titulo "
-    "descripcion pasos"
-    "video   video"
-    ;
+        grid-template-areas:
+            "foto"
+            "video"
+            "audio";
+    }
+
+    .card__cursos1,
+    .card__cursos2,
+    .card__cursos3 {
+
+        /* border: 1px solid rgba(94, 80, 80, 0.514); */
+
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "titulo  titulo "
+            "descripcion pasos"
+            "video   video"
+        ;
+    }
+
+    /****GALERIA****/
+    .intro_galeria p {
+
+
+        margin-inline: 60px;
+        margin-bottom: 20px;
+    }
+
 }
-/****GALERIA****/
-.intro_galeria p{
-    
-    
-    margin-inline: 60px;
-    margin-bottom: 20px;
-}
-
-}
 
 
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
+
     /*********inicioINDEX*********/
-    .intro{
+    .intro {
         margin-inline: 2rem;
         padding-bottom: 48px;
     }
-    .padre__gpc{
+
+    .padre__gpc {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    .gpc{
+
+    .gpc {
         width: 90%;
     }
 
-    .videosyt{
+    .videosyt {
         flex-direction: column;
     }
-    .videoyt iframe{
+
+    .videoyt iframe {
         width: 400px;
         height: 240px;
         padding: 5px;
-        
-     }
 
-     .contact{
+    }
+
+    .contact {
         padding: 40px 40px;
-     }
-     .contact a{
+    }
+
+    .contact a {
         font-size: 13px;
 
-     }
+    }
 }

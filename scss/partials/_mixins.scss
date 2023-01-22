@@ -1,0 +1,59 @@
+@mixin card {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "...........  titulo  video"
+        "descripcion  pasos   video"
+        "descripcion  pasos   video"
+    ;
+    .card__title {
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card__paragraph {
+        grid-area: descripcion;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card__video {
+        grid-area: video;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    .card__steps {
+        grid-area: pasos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    &:hover{
+        background-color: grey;
+    border-radius: 40px;
+    transition: all 1.5s;
+    }
+}
+
+@mixin grid ($uno, $dos){
+    display: grid;
+    grid-template-rows: $uno;
+    grid-template-columns:$dos;
+}
+
+@mixin flex ($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}

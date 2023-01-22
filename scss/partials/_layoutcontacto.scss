@@ -1,0 +1,27 @@
+.contactanos {
+    text-decoration: none;
+    .contactanos h2 {
+        color: black;
+    }
+
+}
+
+#accordionExample {
+    background-color: white;
+    .accordion-item{
+        h2{
+            button{
+                background-color: $maincolor;
+                border-radius: 5px;
+                #accordionExample {
+                    background-color: $maincolor;
+                }
+            }
+        }
+        .accordion-collapse{
+            div{
+                border-radius: 5px;
+            }
+        }
+    }
+}

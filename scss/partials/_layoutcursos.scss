@@ -1,0 +1,19 @@
+#cursos {
+    margin-top: 80px;
+}
+
+.cursos {
+    display: grid;
+    grid-template-rows: repeat(3, 350px);
+    grid-template-areas:
+        "foto"
+        "video"
+        "audio";
+
+        .card__cursos1,
+        .card__cursos2,
+        .card__cursos3 {
+            @include card;
+        }
+    
+}

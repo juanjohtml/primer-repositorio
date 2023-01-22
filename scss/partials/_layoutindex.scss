@@ -1,0 +1,117 @@
+body {
+    background-color: #cdf7f6;
+
+    .sensor {
+        top: 60px;
+        position: relative;
+        height: 300px;
+        width: 100vw !important;
+        overflow: hidden;
+        background: url(../../camara2.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    h1 {
+        text-align: center;
+        // left: 50%;
+        margin-top: 50px;
+    }
+
+    //******quienes somos
+    .intro {
+        @include flex (column, center, center);
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;       
+        gap: 3rem;
+        margin-inline: 10rem;
+        padding-bottom: 6rem;
+        padding-top: 3rem;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+    }
+
+    //*******navegacion
+    .padre__gpc {
+        @include flex (row, stretch, space-between);
+        // display: flex;
+        // align-items: stretch;
+        // justify-content: space-between;
+
+        div {
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #7de0ae;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+
+            h3 {
+                font-size: 25px;
+            }
+
+            a {
+                img {
+                    padding: 5%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+
+    }
+
+    //te puede interesar
+    .tpi {
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .videosyt {
+        @include flex (row, center, space-around);
+
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        .videoyt {
+            iframe {
+                width: 500px;
+                height: 315px;
+                padding: 5px;
+            }
+        }
+    }
+
+    section {
+        .contact {
+            @include flex (row, center, center);
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            padding: 5rem;
+            .contactanos {
+                text-decoration: none;
+            
+            }
+        }
+    }
+
+    //********footer
+    #footer {
+        width: 100%;
+        padding: 1rem;
+        background-color: $maincolor;
+      
+    }
+
+}
