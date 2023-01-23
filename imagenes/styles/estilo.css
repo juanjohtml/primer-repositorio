@@ -247,9 +247,7 @@ body {
 .cursos {
   display: grid;
   grid-template-rows: repeat(3, 350px);
-  grid-template-areas: "foto"
- "video"
- "audio"; }
+  grid-template-areas: "foto" "video" "audio"; }
   .cursos .card__cursos1,
   .cursos .card__cursos2,
   .cursos .card__cursos3 {
@@ -257,9 +255,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "...........  titulo  video"
- "descripcion  pasos   video"
- "descripcion  pasos   video"; }
+    grid-template-areas: "...........  titulo  video" "descripcion  pasos   video" "descripcion  pasos   video"; }
     .cursos .card__cursos1 .card__title,
     .cursos .card__cursos2 .card__title,
     .cursos .card__cursos3 .card__title {
@@ -314,7 +310,7 @@ body {
   #accordionExample .accordion-item .accordion-collapse div {
     border-radius: 5px; }
 
-@media screen and (max-width: 1306px) {
+@media (max-width: 1306px) {
   /*********inicioINDEX*********/
   .redes a img {
     width: 50px; }
@@ -329,22 +325,20 @@ body {
   .videoyt iframe {
     width: 300px;
     height: 180px;
-    padding: 5px; } }
-
-/****PRODUCCIONES****/
-.producciones .producciones__container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px; }
-  .producciones .producciones__container .producciones__item1,
-  .producciones .producciones__container .producciones__item2,
-  .producciones .producciones__container .producciones__item3 {
+    padding: 5px; }
+  /****PRODUCCIONES****/
+  .producciones .producciones__container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px; }
-
-/****GALERIA****/
-.intro_galeria p {
-  margin-inline: 180px;
-  margin-bottom: 20px; }
+    .producciones .producciones__container .producciones__item1,
+    .producciones .producciones__container .producciones__item2,
+    .producciones .producciones__container .producciones__item3 {
+      padding: 10px; }
+  /****GALERIA****/
+  .intro_galeria p {
+    margin-inline: 180px;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 992px) {
   /*********inicioINDEX*********/
@@ -379,20 +373,20 @@ body {
   .gallery {
     flex-direction: column; } }
 
-@media screen and (min-width: 993px) {
+@media (min-width: 993px) {
   /*********inicioINDEX*********/
   .nav-responsive {
     display: none; } }
 
-@media screen and (max-width: 952px) {
+@media (max-width: 952px) {
   /*********inicioINDEX*********/
   .li-responsive a {
     font-size: 16px; } }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   /*********inicioINDEX*********/
   .intro {
-    margin-inline: 4rem; }
+    margin-inline: 2rem; }
   .videosyt {
     flex-direction: column; }
     .videosyt .videoyt iframe {
@@ -405,9 +399,7 @@ body {
   .cursos {
     display: grid;
     grid-template-rows: repeat(3, 500px);
-    grid-template-areas: "foto"
- "video"
- "audio"; }
+    grid-template-areas: "foto" "video" "audio"; }
     .cursos .card__cursos1,
     .cursos .card__cursos2,
     .cursos .card__cursos3 {
@@ -416,15 +408,13 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "titulo  titulo "
- "descripcion pasos"
- "video   video"; }
+      grid-template-areas: "titulo  titulo " "descripcion pasos" "video   video"; }
   /****GALERIA****/
   .intro_galeria p {
     margin-inline: 60px;
     margin-bottom: 20px; } }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   /*********inicioINDEX*********/
   .intro {
     margin-inline: 2rem;
