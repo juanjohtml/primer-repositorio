@@ -295,6 +295,14 @@ body {
       border-radius: 40px;
       transition: all 1.5s; }
 
+.h1contacto {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  font-size: 25px; }
+
+main {
+  width: 100vh; }
+
 .contactanos {
   text-decoration: none; }
   .contactanos .contactanos h2 {
@@ -309,9 +317,6 @@ body {
       background-color: #D6D6D4; }
   #accordionExample .accordion-item .accordion-collapse div {
     border-radius: 5px; }
-
-#body {
-  height: 100vh; }
 
 #footer {
   position: relative;

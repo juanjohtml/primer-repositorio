@@ -1,5 +1,14 @@
+.h1contacto{
+    margin-top: 120px;
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+main {
+    width: 100vh;
+}
 .contactanos {
     text-decoration: none;
+
     .contactanos h2 {
         color: black;
     }
@@ -8,29 +17,31 @@
 
 #accordionExample {
     background-color: white;
-    .accordion-item{
-        h2{
-            button{
+
+    .accordion-item {
+        h2 {
+            button {
                 background-color: $maincolor;
                 border-radius: 5px;
+
                 #accordionExample {
                     background-color: $maincolor;
                 }
             }
         }
-        .accordion-collapse{
-            div{
+
+        .accordion-collapse {
+            div {
                 border-radius: 5px;
             }
         }
     }
 }
 
-#body{
-    height: 100vh;
-}
 
-#footer{
+
+#footer {
     position: relative;
     bottom: 0;
 }
+
