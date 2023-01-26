@@ -13,6 +13,7 @@
             position: absolute;
             padding: 20px 50px;
 
+
             img {
                 height: 40px;
                 position: relative;
@@ -30,33 +31,43 @@
     .ul-responsive {
         list-style: none;
         float: right;
-        text-decoration: none;
 
-        &li {
-            text-decoration: none;
+        li {
+
             list-style: none;
             display: inline-block;
             line-height: 80px;
-            margin: 0 5px;
-            
+            margin: 0px 5px;
+
+
+
+
 
             a {
+
                 text-decoration: none;
                 color: #000;
                 font-size: 18px;
                 padding: 7px 13px;
+                transition: all 1s;
+
+                &:hover {
+                    border-radius: 6px;
+                    background-color: $hovercolor ;
+                }
+
 
             }
         }
 
     }
 
-    
+
 }
 
 
 /**no se por que no pude anidar las lineas de codigo de abajo al nav asi que las pongo aparte sorry not sorry**/
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: #000;
     float: right;

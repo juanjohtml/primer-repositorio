@@ -29,6 +29,7 @@ header {
 
         &:hover {
             transform: scale(1.2);
+            
         }
     }
 
@@ -55,7 +56,7 @@ header {
                     color: black;
 
                     &:hover {
-                        color: grey;
+                        color: #FCA311 !important;
                         transform: scale(1.1);
                     }
 
