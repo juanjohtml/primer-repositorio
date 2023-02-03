@@ -108,7 +108,7 @@ header {
   display: none; }
 
 body {
-  background-color: #E5E5E5; }
+  background-color: #f8f8f8; }
   body .sensor {
     top: 60px;
     position: relative;
@@ -281,6 +281,11 @@ body {
       justify-content: center;
       align-items: center;
       padding: 15px; }
+      .cursos .card__cursos1 .card__paragraph p,
+      .cursos .card__cursos2 .card__paragraph p,
+      .cursos .card__cursos3 .card__paragraph p {
+        text-align: center;
+        padding: 0 15px; }
     .cursos .card__cursos1 .card__video,
     .cursos .card__cursos2 .card__video,
     .cursos .card__cursos3 .card__video {
@@ -324,17 +329,22 @@ main {
 
 #accordionExample {
   background-color: white; }
-  #accordionExample .accordion-item h2 button {
-    background-color: #E5E5E5;
-    border-radius: 5px; }
-    #accordionExample .accordion-item h2 button #accordionExample {
-      background-color: #E5E5E5; }
+  #accordionExample .accordion-item h2 {
+    --bs-accordion-btn-focus-box-shadow:none; }
+    #accordionExample .accordion-item h2 button {
+      background-color: #FCA311;
+      border-radius: 0px; }
   #accordionExample .accordion-item .accordion-collapse div {
     border-radius: 5px; }
 
 #footer {
   position: relative;
   bottom: 0; }
+
+.btn {
+  background-color: #FCA311;
+  border: none;
+  box-shadow: 2px 2px #bcbcbc; }
 
 @media (max-width: 1306px) {
   body {
@@ -448,6 +458,8 @@ main {
 @media (max-width: 576px) {
   body {
     /*********inicioINDEX*********/ }
+    body .sensor {
+      display: none; }
     body .intro {
       margin-inline: 2rem;
       padding-bottom: 48px; }
@@ -468,4 +480,27 @@ main {
       padding: 40px 40px;
       width: 400px; }
       body .contact a h2 {
-        font-size: 14px; } }
+        font-size: 14px; }
+    body section .producciones__container div img {
+      width: 350px;
+      height: 161px; }
+    body .cursos {
+      width: 100%; }
+      body .cursos .card__cursos1,
+      body .cursos .card__cursos2,
+      body .cursos .card__cursos3 {
+        /* border: 1px solid rgba(94, 80, 80, 0.514); */
+        margin-inline: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo  titulo " "descripcion descripcion" "pasos pasos" "video   video"; }
+        body .cursos .card__cursos1:hover,
+        body .cursos .card__cursos2:hover,
+        body .cursos .card__cursos3:hover {
+          border-radius: 10px; }
+        body .cursos .card__cursos1 div iframe,
+        body .cursos .card__cursos2 div iframe,
+        body .cursos .card__cursos3 div iframe {
+          width: 250px;
+          height: 150px; } }

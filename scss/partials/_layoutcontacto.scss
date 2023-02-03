@@ -27,13 +27,13 @@ main {
 
     .accordion-item {
         h2 {
+            --bs-accordion-btn-focus-box-shadow:none;
+            
             button {
-                background-color: $maincolor;
-                border-radius: 5px;
-
-                #accordionExample {
-                    background-color: $maincolor;
-                }
+                background-color: $hovercolor;
+                border-radius: 0px;
+                
+                
             }
         }
 
@@ -50,3 +50,8 @@ main {
     bottom: 0;
 }
 
+.btn{
+    background-color: $hovercolor;
+    border: none;
+    box-shadow: 2px 2px #bcbcbc;
+}

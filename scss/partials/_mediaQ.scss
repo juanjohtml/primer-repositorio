@@ -228,6 +228,9 @@
 @media (max-width:576px) {
     body {
 
+        .sensor{
+            display:none;
+        }
         /*********inicioINDEX*********/
         .intro {
             margin-inline: 2rem;
@@ -274,6 +277,54 @@
 
             }
         }
+        //*****Producciones
+        section{
+            .producciones__container{
+                div{
+                    img{
+                        width: 350px;
+                        height: 161px;
+                    }
+                }
 
+            }
+        }
+        //*****Cursos
+        .cursos{
+            width: 100%;
+            .card__cursos1,
+            .card__cursos2,
+            .card__cursos3 {
+
+
+                /* border: 1px solid rgba(94, 80, 80, 0.514); */
+                
+                
+                
+                margin-inline: 5px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "titulo  titulo "
+                    "descripcion descripcion"
+                    "pasos pasos"
+                    "video   video"
+
+                ;
+               
+                &:hover{
+                    border-radius: 10px;
+                  
+                }
+                div{
+                    iframe{
+                        width: 250px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+      
     }
 }
