@@ -231,6 +231,10 @@
 
     #footer {
         flex-direction: column;
+        p{
+            margin: 10px 0;
+            font-size: 11px;
+        }
 
         .redes-responsive {
             a {

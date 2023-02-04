@@ -464,6 +464,9 @@ main {
       margin-bottom: 20px; }
   #footer {
     flex-direction: column; }
+    #footer p {
+      margin: 10px 0;
+      font-size: 11px; }
     #footer .redes-responsive a img {
       width: 20px;
       margin-top: 20px; } }
