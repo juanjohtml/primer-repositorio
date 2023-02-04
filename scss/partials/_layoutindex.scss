@@ -102,14 +102,16 @@ body {
             // align-items: center;
             // justify-content: center;
             padding: 5rem;
+
             .contactanos {
                 text-decoration: none;
                 padding: 5px;
-                &:hover{
+
+                &:hover {
                     border-radius: 6px;
-                    background-color:$hovercolor ;
+                    background-color: $hovercolor ;
                 }
-            
+
             }
         }
     }
@@ -117,9 +119,23 @@ body {
     //********footer
     #footer {
         width: 100%;
-        padding: 1rem;
+        height: 70px;        
         background-color: $maincolor;
-      
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        .redes-responsive {        
+                       
+            a{
+               
+                img{
+                    
+                    width: 40px;
+                    margin-inline:10px;
+                }
+            }
+        }
     }
 
 }

@@ -116,6 +116,7 @@
                 }
             }
         }
+
     }
 
     #check:checked~.ul-responsive {
@@ -138,6 +139,12 @@
         /*********inicioINDEX*********/
         .nav-responsive {
             display: none;
+        }
+
+        footer {
+            div {
+                display: none;
+            }
         }
     }
 }
@@ -221,6 +228,20 @@
             }
         }
     }
+
+    #footer {
+        flex-direction: column;
+
+        .redes-responsive {
+            a {
+                img {
+                    width: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+    }
 }
 
 
@@ -228,9 +249,10 @@
 @media (max-width:576px) {
     body {
 
-        .sensor{
-            display:none;
+        .sensor {
+            display: none;
         }
+
         /*********inicioINDEX*********/
         .intro {
             margin-inline: 2rem;
@@ -268,20 +290,21 @@
         .contact {
             padding: 40px 40px;
             width: 400px;
-          
+
             a {
-                
-                h2{
+
+                h2 {
                     font-size: 14px;
                 }
 
             }
         }
+
         //*****Producciones
-        section{
-            .producciones__container{
-                div{
-                    img{
+        section {
+            .producciones__container {
+                div {
+                    img {
                         width: 350px;
                         height: 161px;
                     }
@@ -289,18 +312,20 @@
 
             }
         }
+
         //*****Cursos
-        .cursos{
+        .cursos {
             width: 100%;
+
             .card__cursos1,
             .card__cursos2,
             .card__cursos3 {
 
 
                 /* border: 1px solid rgba(94, 80, 80, 0.514); */
-                
-                
-                
+
+
+
                 margin-inline: 5px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -312,19 +337,20 @@
                     "video   video"
 
                 ;
-               
-                &:hover{
+
+                &:hover {
                     border-radius: 10px;
-                  
+
                 }
-                div{
-                    iframe{
+
+                div {
+                    iframe {
                         width: 250px;
                         height: 150px;
                     }
                 }
             }
         }
-      
+
     }
 }
